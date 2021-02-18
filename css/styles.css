@@ -1,0 +1,129 @@
+:root {
+  --bg-color: hsl(257, 40%, 49%);
+  --hover: hsl(300, 69%, 71%);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(/assets/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    background-image: url(/assets/images/bg-desktop.svg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  max-width: 40%;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    max-width: 60%;
+    margin-bottom: 100px;
+  }
+}
+
+.banner {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+}
+
+.article {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    text-align: left;
+    font-size: 1.45rem;
+    margin-left: 100px;
+  }
+}
+
+.text {
+  font-weight: lighter;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--bg-color);
+  background-color: #fff;
+  padding: 10px 75px;
+  border-radius: 25px;
+  margin: 25px 0 50px 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .button:hover {
+    background-color: var(--hover);
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.social__item {
+  border: 1px solid #fff;
+  margin: 0 5px;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .social__item:hover {
+    border-color: var(--hover);
+    color: var(--hover);
+  }
+}
+
+.social__link {
+  color: inherit;
+}
